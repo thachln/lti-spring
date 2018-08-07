@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+                                         "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+    <property name="show_sql">true</property> 
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    <property name="connection.pool_size">5</property>
+<!--     <property name="current_session_context_class">thread</property> -->
+    <property name="hibernate.connection.release_mode">auto</property>
+    <mapping resource="/mks/ownbank/db/entiy/LuckyNum.hbm.xml"/>
+    <mapping resource="/mks/ownbank/db/entiy/LogLtiLauch.hbm.xml"/>
+    <mapping resource="/mks/ownbank/db/entiy/PeriodVote.hbm.xml"/>
+    <mapping resource="/mks/ownbank/db/entiy/Setting.hbm.xml"/>
+    
+  </session-factory>
+</hibernate-configuration>

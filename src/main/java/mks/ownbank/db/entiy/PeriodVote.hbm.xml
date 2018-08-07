@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 21, 2018 2:41:13 PM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+ <class name="mks.ownbank.db.entiy.PeriodVote" table="owbank_period_vote">
+  <id name="id" type="java.lang.Integer">
+   <column name="ID"/>
+   <generator class="identity"/>
+  </id>
+  <property generated="never" lazy="false" name="eventId" type="java.lang.String">
+   <column name="EVENTID"/>
+  </property>
+  <property generated="never" lazy="false" name="userid" type="java.lang.String">
+   <column name="USERID" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="username" type="java.lang.String">
+   <column name="USERNAME" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="fullname" type="java.lang.String">
+   <column name="FULLNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="givenname" type="java.lang.String">
+   <column name="GIVENNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="familyname" type="java.lang.String">
+   <column name="FAMILYNAME"/>
+  </property>
+  <property generated="never" lazy="false" name="voted" type="java.util.Date">
+   <column name="VOTED" not-null="true"/>
+  </property>
+  <property generated="never" lazy="false" name="voteValue" type="java.lang.Double">
+   <column name="VOTEVALUE" not-null="true"/>
+  </property>
+  <one-to-one class="mks.ownbank.db.entiy.LogLtiLauch" name="ltiLaunch"/>
+ </class>
+</hibernate-mapping>

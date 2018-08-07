@@ -1,0 +1,40 @@
+body {
+    background-color:#64B377;
+}
+.main-view {
+    text-align:center;
+}
+.main-view button {
+    margin-top:1em;
+}
+.main-view {
+    color:#EEEEEE;
+}
+.header{
+    font-size:5em;
+}
+.subheader{
+    font-size:1.25em;
+    font-weight:bold;
+}
+.caps{
+    text-align:left;
+}
+.profile-step{
+    margin-top:1em;
+}
+.config{
+    margin-top: 2em;
+}
+.config .subheader{
+    margin-bottom: 0.5em;
+}
+.config label{
+    display:block;
+    font-weight:500;
+}
+.config input {
+    background-color: rgb(111, 111, 111);
+    border: none;
+    padding: 0.5em;
+}
